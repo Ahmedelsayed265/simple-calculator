@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Damion&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="circle">
+        dark & light theme <br />
+        Calculator
+    </div>
+    <div class="container">
+        <div class="d_l">
+            <i class="fas fa-sun" id="icon"></i>
+        </div>
+        <div class="screen">
+            <div class="output" id="output"></div>
+            <input type="text" class="input" id="inPut" value="" />
+        </div>
+        <div class="calc">
+            <button class="tools" onclick="clr()">AC</button>
+            <button class="tools" onclick="del()">
+                <i class="fal fa-backspace"></i>
+            </button>
+            <button class="tools" onclick="display('%')">%</button>
+            <button class="tools" onclick="display('/')">
+                <i class="far fa-divide"></i>
+            </button>
+            <button class="number" onclick="display('7')">7</button>
+            <button class="number" onclick="display('8')">8</button>
+            <button class="number" onclick="display('9')">9</button>
+            <button class="tools x" onclick="display('*')">x</button>
+            <button class="number" onclick="display('4')">4</button>
+            <button class="number" onclick="display('5')">5</button>
+            <button class="number" onclick="display('6')">6</button>
+            <button class="tools x" onclick="display('-')">-</button>
+            <button class="number" onclick="display('1')">1</button>
+            <button class="number" onclick="display('2')">2</button>
+            <button class="number" onclick="display('3')">3</button>
+            <button class="tools x" onclick="display('+')">+</button>
+            <button class="number" onclick="display('0')">0</button>
+            <button class="number" onclick="display('.')">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
